@@ -1,32 +1,33 @@
-<p>employees List!</p>
 
 
-  
 
-<table class="table">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>City</th>
-        <th>Email</th>
-        <th>Birthday</th>
-        <th colspan="2"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let dataItem of employeeList">
-        <td>{{dataItem.id}}</td>
-        <td>{{dataItem.firstName}}</td>
-        <td>{{dataItem.lastName}}</td>
-        <td>{{dataItem.city}}</td>
-        <td>{{dataItem.email}}</td>
-        <td>{{dataItem.birthday}}</td>
-        <td>
-          <a href="">Edit</a>
-          <a href="">Delete</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>City</th>
+          <th>Email</th>
+          <th>Birthday</th>
+          <th colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dataItem of employeeList">
+          <td>{{dataItem.id}}</td>
+          <td>{{dataItem.firstName}}</td>
+          <td>{{dataItem.lastName}}</td>
+          <td>{{dataItem.city}}</td>
+          <td>{{dataItem.email}}</td>
+          <td>{{dataItem.birthday}}</td>
+          <td>
+            <a class="btn btn-primary" href="">Edit</a>
+            <a class="btn btn-primary" href="">Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 

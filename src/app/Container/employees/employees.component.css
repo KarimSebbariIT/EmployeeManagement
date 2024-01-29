@@ -1,13 +1,18 @@
-table thead{
-    background-color: #165;
+.thead-table{
+    background-color: #165 !important;
     color: white;
     padding: 0px;
     margin: 0px;
-    /* border: 0.5px solid lightgray; */
 }
-thead tr th{
-    border: 0.5px solid lightgray; 
+
+.new{
+    float: right;
+    width: 140px;
+    margin: 20px;
 }
-tbody tr{
-    border: 0.5px solid gray;
+.btn-primary{
+    margin: 5px;
+}
+table{
+    margin: 20px;
 }

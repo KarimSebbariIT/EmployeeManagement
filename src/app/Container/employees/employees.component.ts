@@ -8,7 +8,9 @@ import { EmployeeService } from 'src/app/Services/EmployeeService';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
-
+  public opened:boolean;
+public newEmployee:Employee= new Employee();
+public updateEmployee:Employee= new Employee;
   constructor(public employeeService:EmployeeService) { }
 
   ngOnInit(): void {
@@ -20,5 +22,10 @@ export class EmployeesComponent implements OnInit {
     this.employeeService.GetEmployees().subscribe((data: Employee[]) => {
       this.employeeList = data;
     });
+  }
+  openNewEmployee(){
+    this.opened=true;
+    // console.log("test");
+    // alert("test")
   }
 }
